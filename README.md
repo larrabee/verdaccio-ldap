@@ -1,4 +1,4 @@
-# verdaccio-ldap [![Build Status](https://travis-ci.org/Alexandre-io/verdaccio-ldap.svg?branch=master)](https://travis-ci.org/Alexandre-io/verdaccio-ldap) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b15683d154d44347bccc4360d48436a7)](https://www.codacy.com/app/alexandre_io/verdaccio-ldap?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Alexandre-io/verdaccio-ldap&amp;utm_campaign=Badge_Grade) [![Greenkeeper badge](https://badges.greenkeeper.io/Alexandre-io/verdaccio-ldap.svg)](https://greenkeeper.io/)
+# verdaccio-ldap-fork
 
 `verdaccio-ldap` is a fork of `sinopia-ldap`. It aims to keep backwards compatibility with `sinopia`, while keeping up with npm changes.
 
@@ -6,7 +6,7 @@
 
 ```sh
 $ npm install verdaccio
-$ npm install verdaccio-ldap
+$ npm install verdaccio-ldap-fork
 ```
 
 ## Config
@@ -16,7 +16,7 @@ Add to your `config.yaml`:
 ```yaml
 auth:
   ldap:
-    type: ldap
+    type: ldap-fork
     groupNameAttribute: 'cn'
     client_options:
       url: "ldaps://ldap.example.com"
@@ -37,7 +37,7 @@ auth:
 It's called as:
 
 ```js
-require('verdaccio-ldap')(config, stuff)
+require('verdaccio-ldap-fork')(config, stuff)
 ```
 
 Where:
